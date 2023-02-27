@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="894.0" prefWidth="897.0" stylesheets="@../css/abc.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fxml.counter.ABCCounterController">
+   <children>
+      <FlowPane id="fpCounter" fx:id="fpCounter" layoutX="27.0" layoutY="127.0" prefHeight="694.0" prefWidth="844.0">
+         <children>
+            <Label styleClass="vowel" text="a" />
+            <Label styleClass="consonant" text="b" />
+            <Label styleClass="consonant" text="c" />
+            <Label styleClass="consonant" text="d" />
+            <Label styleClass="vowel" text="e" />
+            <Label styleClass="consonant" text="f" />
+            <Label styleClass="consonant" text="g" />
+            <Label styleClass="consonant" text="h" />
+            <Label styleClass="vowel" text="i" />
+            <Label styleClass="consonant" text="j" />
+            <Label styleClass="consonant" text="k" />
+            <Label styleClass="consonant" text="l" />
+            <Label styleClass="consonant" text="m" />
+            <Label styleClass="consonant" text="n" />
+            <Label styleClass="vowel" text="o" />
+            <Label styleClass="consonant" text="p" />
+            <Label styleClass="consonant" text="q" />
+            <Label styleClass="consonant" text="r" />
+            <Label styleClass="consonant" text="s" />
+            <Label styleClass="consonant" text="t" />
+            <Label styleClass="vowel" text="u" />
+            <Label styleClass="consonant" text="v" />
+            <Label styleClass="consonant" text="w" />
+            <Label styleClass="consonant" text="x" />
+            <Label styleClass="consonant" text="y" />
+            <Label styleClass="consonant" text="z" />
+             <Label styleClass="vowel" text="A" />
+            <Label styleClass="consonant" text="B" />
+            <Label styleClass="consonant" text="C" />
+            <Label styleClass="consonant" text="D" />
+            <Label styleClass="vowel" text="E" />
+            <Label styleClass="consonant" text="F" />
+            <Label styleClass="consonant" text="G" />
+            <Label styleClass="consonant" text="H" />
+            <Label styleClass="vowel" text="I" />
+            <Label styleClass="consonant" text="J" />
+            <Label styleClass="consonant" text="K" />
+            <Label styleClass="consonant" text="L" />
+            <Label styleClass="consonant" text="M" />
+            <Label styleClass="consonant" text="N" />
+            <Label styleClass="vowel" text="O" />
+            <Label styleClass="consonant" text="P" />
+            <Label styleClass="consonant" text="Q" />
+            <Label styleClass="consonant" text="R" />
+            <Label styleClass="consonant" text="S" />
+            <Label styleClass="consonant" text="T" />
+            <Label styleClass="vowel" text="U" />
+            <Label styleClass="consonant" text="V" />
+            <Label styleClass="consonant" text="W" />
+            <Label styleClass="consonant" text="X" />
+            <Label styleClass="consonant" text="Y" />
+            <Label styleClass="consonant" text="Z" />
+         </children>
+      </FlowPane>
+      <Label layoutX="27.0" layoutY="863.0" text="Developer: Muhammad Faizan" />
+      <Label id="lblTitle" fx:id="lblTitle" layoutX="42.0" layoutY="21.0" text="abcABC" />
+      <FlowPane id="fpCountMode" layoutX="241.0" layoutY="30.0" prefHeight="71.0" prefWidth="308.0">
+         <children>
+            <RadioButton mnemonicParsing="false" onAction="#onActionAll" text="ABCabc" userData="Aa">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgMode" />
+               </toggleGroup></RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#onActionAll" selected="true" text="abcABC" toggleGroup="$tgMode" userData="aA" />
+            <RadioButton mnemonicParsing="false" onAction="#onActionAll" text="cbaCBA" toggleGroup="$tgMode" userData="zZ" />
+            <RadioButton mnemonicParsing="false" onAction="#onActionAll" text="CBAcba" toggleGroup="$tgMode" userData="Zz" />
+            <RadioButton mnemonicParsing="false" onAction="#onActionAll" text="abc" toggleGroup="$tgMode" userData="a" />
+            <RadioButton mnemonicParsing="false" onAction="#onActionAll" text="cba" toggleGroup="$tgMode" userData="z" />
+            <RadioButton mnemonicParsing="false" onAction="#onActionAll" text="ABC" toggleGroup="$tgMode" userData="A" />
+            <RadioButton mnemonicParsing="false" onAction="#onActionAll" text="CBA" toggleGroup="$tgMode" userData="Z" />
+         </children>
+      </FlowPane>
+      <GridPane id="fpCountMode" layoutX="567.0" layoutY="31.0" prefHeight="71.0" prefWidth="198.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <RadioButton mnemonicParsing="false" onAction="#onActionAll" selected="true" text="None">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgHighlight" />
+               </toggleGroup></RadioButton>
+            <RadioButton mnemonicParsing="false" onAction="#onActionAll" text="Consonant" toggleGroup="$tgHighlight" GridPane.columnIndex="1" />
+            <RadioButton mnemonicParsing="false" onAction="#onActionAll" text="Vowel" toggleGroup="$tgHighlight" GridPane.rowIndex="1" />
+            <RadioButton mnemonicParsing="false" onAction="#onActionAll" text="Both" toggleGroup="$tgHighlight" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Label layoutX="241.0" layoutY="13.0" text="Mode" />
+      <Label layoutX="567.0" layoutY="13.0" text="Highlight" />
+   </children>
+</AnchorPane>

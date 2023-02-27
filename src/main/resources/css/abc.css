@@ -1,0 +1,37 @@
+.abc,
+.vowel,
+.consonant {
+  -fx-font-size: 35pt;
+  -fx-border-color: black;
+  -fx-min-width: 1in;
+  -fx-min-height: 1in;
+  -fx-alignment: center;
+}
+
+.vowel {
+  -fx-background-color: antiquewhite;
+}
+
+#fpCounter {
+  -fx-border-color: black;
+  -fx-padding: 10;
+  -fx-hgap: 4;
+  -fx-vgap: 4;
+}
+#lblTitle {
+  -fx-font-size: 37pt;
+}
+.consonant {
+  -fx-background-color: #20b2aa;
+  -fx-background-radius: 60px;
+  -fx-text-fill: #ffffff;
+  -fx-border-color: NONe;
+}
+#fpCountMode {
+  -fx-vgap: 4;
+  -fx-border-color: black;
+  -fx-padding: 6;
+}
+#fpCountMode > .radio-button {
+  -fx-min-width: 1in;
+}
